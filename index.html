@@ -4,6 +4,7 @@
     <title>Opleiding Ergonomie :: OmniMove At Work</title>
     <link rel="stylesheet" type="text/css" href="css/ergonomie.css?v=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="dns-prefetch" href="//www.clubplannerlink.tk">
 </head>
 <body>
     <div id="hero-section" class="w-screen h-screen">
@@ -129,7 +130,7 @@
         <div class="container">
             <div class="w-full sm:w-4/5">
                 <div class="font-black italic text-2xl">Schrijf je nu in!</div>
-                <form>
+                <form method="POST" action="http://clubplannerlink.test/opleiding-inschrijving  ">
                 <div class="flex flex-wrap mt-6">
                     <div class="w-full sm:w-1/2">
                         <label><input type="radio" name="date" value="2019-11-12" required="required" class="mx-1"> Dinsdag 12 november, 13u - 17u</label>
@@ -163,7 +164,7 @@
                     <div class="flex flex-wrap">
                         <div class="w-full sm:w-1/2 pr-8 mb-4">
                             <div class="">Firmanaam *</div>
-                            <div class=""><input type="text" name="company-name" class="input-1"></div>
+                            <div class=""><input type="text" name="company_name" class="input-1"></div>
                         </div>
                         <div class="w-full sm:w-1/2 pr-8 mb-4">
                             <div class="h-8"></div>
@@ -174,8 +175,8 @@
                                     }
                                 </style>
                                 <label class="custom-label flex">
-                                      <div class="bg-white shadow w-6 h-6 p-1 flex justify-center items-center mr-2">
-                                        <input type="checkbox" name="needs-invoice" class="hidden" onchange="
+                                      <div class="bg-white shadow min-w-6 w-6 h-6 p-1 flex justify-center items-center mr-2">
+                                        <input type="checkbox" name="wants_invoice" class="hidden" value="1" onchange="
                                             if(this.checked){
                                                 document.getElementById('invoicedetails').classList.remove('hidden');
                                             } else {
@@ -192,15 +193,15 @@
                     <div class="w-full sm:w-1/2 flex flex-wrap hidden" id="invoicedetails">
                         <div class="w-full pr-8 mb-4">
                             <div class="">Adres:</div>
-                            <div class=""><input type="text" class="input-1" name="address"></div>
+                            <div class=""><input type="text" class="input-1" name="company_details[address]"></div>
                         </div>
                         <div class="w-full pr-8 mb-4">
                             <div class="">Postcode + Gemeente:</div>
-                            <div class=""><input type="text" class="input-1" name="city"></div>
+                            <div class=""><input type="text" class="input-1" name="company_details[city]"></div>
                         </div>
                         <div class="w-full pr-8 mb-4">
                             <div class="">BTW Nummer:</div>
-                            <div class=""><input type="text" class="input-1" name="vat_nr"></div>
+                            <div class=""><input type="text" class="input-1" name="company_details[vat_nr]"></div>
                         </div>
                     </div>
 
@@ -208,8 +209,8 @@
                         <div class="h-8"></div>
                         <div class="">
                             <label class="custom-label flex">
-                                  <div class="bg-white shadow w-6 h-6 p-1 flex justify-center items-center mr-2">
-                                    <input type="checkbox" name="terms-and-conditions" class="hidden" required="required">
+                                  <div class="bg-white shadow min-w-6 w-6 h-6 p-1 flex justify-center items-center mr-2">
+                                    <input type="checkbox" name="accepted_terms" class="hidden" required="required">
                                     <svg class="hidden w-4 h-4 text-green-600 pointer-events-none" viewBox="0 0 172 172"><g fill="none" stroke-width="none" stroke-miterlimit="10" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode:normal"><path d="M0 172V0h172v172z"/><path d="M145.433 37.933L64.5 118.8658 33.7337 88.0996l-10.134 10.1341L64.5 139.1341l91.067-91.067z" fill="currentColor" stroke-width="1"/></g></svg>
                                   </div>
                                   <span class="select-none"> Ik ga akkoord met de algemene voorwaarden &amp; privacyverklaring</span>

@@ -631,6 +631,10 @@ video {
   }
 }
 
+.min-w-6 {
+  min-width: 1.5rem;
+}
+
 .input-1 {
   background-color: #fff;
   border-width: 2px;
