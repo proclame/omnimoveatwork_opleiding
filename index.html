@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Opleiding Ergonomie :: OmniMove At Work</title>
-    <link rel="stylesheet" type="text/css" href="css/ergonomie.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/ergonomie.css?v=5">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="dns-prefetch" href="//manager.crossfitomnimove.be">
 </head>
@@ -12,6 +12,48 @@
         <div class="absolute inset-0 flex flex-col justify-center align-center z-10" style="mix-blend-mode: multiply">
             <img src="images/u-shape.svg" class="mx-auto" width="500">
         </div>
+        <nav class="navbar navbar-expand-xl absolute w-full text-white z-20 p-6 xl:pt-24 z-40">
+            <div class="container" style="max-width: 1500px !important;">
+                <div class="mx-0">
+                    <a class="relative xl:float-right z-50" rel="home" href="http://www.omnimoveatwork.be/">
+                        <span class="icon icon-logo icon-md white"></span>
+                    </a>
+
+                    <div class="navbar-toggler collapsed float-right xl:hidden pt-2 z-50 relative" data-toggle="collapse" data-target="#navbar-standard-collapse">
+                        <button type="button" class="block text-white focus:text-white focus:outline-none" onclick="toggleNav()">
+                            <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div id="navbar-wrap" class="navbar-wrap hidden xl:block float-left z-40
+                    absolute xl:static
+                    inset-0 xl:inset-auto
+                    w-screen xl:w-auto
+                    h-screen xl:h-auto
+                    bg-brand-teal xl:bg-transparent
+                    pl-12 xl:p-none
+
+                    ">
+                        <ul id="menu-main-menu" class="font text-3xl font-black italic xl:font-bold xl:not-italic xl:text-xl leading-relaxed xl:leading-loose py-auto absolute transform-50up xl:transform-none top-50 xl:top-none" style="font-weight: 600;">
+                            <li id="menu-item-205" class="">
+                                <a title="Omnimove" href="http://www.omnimoveatwork.be/" class="">Omnimove</a>
+                            </li>
+                            <li id="menu-item-303" class="">
+                                <a title="Trainers" href="http://www.omnimoveatwork.be/homepage/trainers/" class="">Trainers</a>
+                            </li>
+                            <li id="menu-item-392" class="">
+                                <a title="Opleiding" href="https://omnimoveatwork.be/opleidingen/ergonomie/" class="text-black">Opleiding</a>
+                            </li>
+                            <li id="menu-item-17" class="">
+                                <a title="Contact" href="http://www.omnimoveatwork.be/homepage/contact/" class="">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
         <div class="flex flex-col justify-center h-full">
             <div id="hero-text" class="z-20">
                 <div class="flex justify-center">
@@ -20,7 +62,7 @@
                         <span class="text-white text-xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black italic text-shadow leading-none inline-block" style="width: fit-content;">VOORKOMEN EN VERHELPEN<br>VAN RUGKLACHTEN</span>
                     </h1>
                 </div>
-                <div class="text-white sm:text-xl lg:text-2xl text-center text-shadow container px-4 mt-4">Ga ziekteverzuim en uitval tegen door je medewerkers de nodige informatie over ergonomie mee te geven.</div>
+                <div class="text-white sm:text-xl lg:text-2xl text-center text-shadow container px-4 mt-4">Ga ziekteverzuim en uitval tegen. Geef je medewerkers de kennis om hun eigen lichaam te onderhouden.</div>
             </div>
             <div class="bottom-0 absolute mb-8 w-full text-center z-20 px-8">
                 <a href="#schrijf-je-nu-in" class="z-20 text-xl mx-auto bg-gray-100 hover:bg-gray-300 font-bold py-3 px-4 rounded w-full sm:w-64 inline-block">
@@ -42,8 +84,8 @@
     <div id="cirkel" class="absolute bg-no-repeat bg-right w-screen h-1/4-screen -z-10" style="background-image: url('images/cirkel_corner.svg');"></div>
     <div id="section-1" class="container pt-16 md:pt-24 text-lg">
         <div class="w-full sm:w-3/5">
-            <p class="mb-4">Het is bijna niet meer weg te denken - overal hoor je over burn-outs, stress op het werk, langtijdige ziekte, nek-en rugklachten, en uiteindelijk zelfs uitval.</p>
-            <p class="mb-4">Vaak ligt de oorzaak bij een slecht of eenzijdig beweegpatroon. Denk aan gekromde ruggen aan een bureau, minstens 8u per dag zitten, of steeds dezelfde bewegingen herhalen.</p>
+            <p class="mb-4">Het is bijna niet meer weg te denken - overal hoor je over burn-outs, stress op het werk, langtijdige ziekte, nek-en rugklachten, en uiteindelijk uitval.</p>
+            <p class="mb-4">Vaak ligt de oorzaak bij een slecht, onvoldoende en eenzijdig beweegpatroon. Denk aan gekromde ruggen aan een bureau, minstens 8u per dag zitten, of het voortdurend herhalen van dezelfde bewegingen.</p>
             <p class="mb-4">In de opleiding Ergonomie leer je hands-on tips om jezelf te wapenen tegen vaak voorkomende kwaaltjes op het werk. </p>
             <p class="mb-4">Het is tijd om de verantwoordelijkheid bij de medewerkers te leggen en hen terug het recht te geven om baas te zijn over hun eigen lichaam.</p>
 
@@ -103,7 +145,7 @@
                 <div class="font-black italic text-xl">Wat zijn de <span class="text-brand-teal">voordelen</span> voor de medewerker?</div>
                 <div class="checklist mt-4">
                     <div class="checklist-item pl-12 mb-4">Beheerst oefeningen (vb. Tegen rug- en nekklachten, etc.) die levenslang dienen om zo het lichaam non-stop te onderhouden</div>
-                    <div class="checklist-item pl-12 mb-4">Leert wat te doen bij pijnklachten (denk aan nekpijn, lage onderrug, etc.)</div>
+                    <div class="checklist-item pl-12 mb-4">Leert wat te doen bij pijnklachten (denk aan nekpijn, lage rugpijn, ontstekingspijnen, etc.)</div>
                     <div class="checklist-item pl-12 mb-4">Kan vanaf dag 1 zelf aan de slag met zijn gezondheid</div>
                     <div class="checklist-item pl-12 mb-4">Kan andere collega's inspireren en bijsturen</div>
                     <div class="checklist-item pl-12 mb-4">Ervaart meer energie en een verhoogde productiviteit</div>
@@ -117,9 +159,9 @@
             <div class="w-full sm:w-1/2 md:w-1/4 p-4 mt-4">
                 <div><img src="images/icons/piggy-bank-green.svg" class="h-16 sm:h-32 mx-auto"></div>
                 <div class="text-center mt-4">
-                    <span class="line-through">&euro; 145</span> <span class="sm:hidden">&euro; 95 (excl BTW)</span><br>
+                    <span class="line-through">&euro; 145</span> <span class="sm:hidden">&euro; 95 (+ &euro; 19,95 BTW)</span><br>
                     <span class="font-bold">TIJDELIJKE AANBIEDING</span><br>
-                    <span class="hidden sm:inline">&euro; 95 (excl BTW)</span>
+                    <span class="hidden sm:inline">&euro; 95 (+ &euro; 19,95 BTW)</span>
                 </div>
             </div>
             <div class="w-full sm:w-1/2 md:w-1/4 p-4 mt-4">
@@ -137,8 +179,8 @@
             </div>
         </div>
         <div  class="font-black italic text-xl pt-16 leading-loose">Beschikbare opleidingen bij OmniMove Geel</div>
-        <div class="leading-loose">Dinsdag 12 november, 13u - 17u</div>
         <div class="leading-loose">Dinsdag 26 november, 13u - 17u</div>
+        <div class="leading-loose">Dinsdag 17 december, 13u - 17u</div>
     </div>
     <div id="section-6" class="bg-brand-teal py-12 mt-16">
         <div class="container">
@@ -148,8 +190,8 @@
                 <form method="POST" action="https://manager.crossfitomnimove.be/opleiding-inschrijving">
                 <div class="flex flex-wrap mt-6">
                     <div class="w-full sm:w-1/2">
-                        <div><label class="cursor-pointer"><input type="radio" name="date" value="2019-11-12" required="required" class="mx-1"> Dinsdag 12 november, 13u - 17u</label></div>
                         <div class="mt-2"><label class="cursor-pointer"><input type="radio" name="date" value="2019-11-26" required="required" class="mx-1"> Dinsdag 26 november, 13u - 17u</label></div>
+                        <div><label class="cursor-pointer"><input type="radio" name="date" value="2019-12-17" required="required" class="mx-1"> Dinsdag 17 december, 13u - 17u</label></div>
                     </div>
                 </div>
                 <h4 class="font-black italic text-xl mt-4 mb-4">Persoonlijke gegevens</h4>
@@ -242,4 +284,20 @@
     </div>
 
 </body>
+
+<script>
+let navOpen = false;
+
+const toggleNav = function () {
+    const navBar = document.getElementById("navbar-wrap");
+    if(navOpen == false){
+        navBar.classList.remove("hidden");
+        navOpen = true;
+    } else {
+        navBar.classList.add("hidden");
+        navOpen = false;
+    }
+}
+</script>
+
 </html>

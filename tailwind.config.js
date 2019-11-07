@@ -2,7 +2,7 @@ module.exports = {
   theme: {
     extend: {
         colors: {
-            'brand-teal': '#65BB98',
+            'brand-teal': '#21c49a',
         }
     },
     container: {
